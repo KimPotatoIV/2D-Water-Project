@@ -1,0 +1,19 @@
+[gd_scene load_steps=4 format=3 uid="uid://cm8qrujxm1vjj"]
+
+[ext_resource type="Texture2D" uid="uid://cu8ekral7v7cq" path="res://scenes/background/background_layer_1.png" id="1_rsf5d"]
+[ext_resource type="Texture2D" uid="uid://befv3fv8qykch" path="res://scenes/background/background_layer_2.png" id="2_ewwm8"]
+[ext_resource type="Texture2D" uid="uid://d2t1ara401bgu" path="res://scenes/background/background_layer_3.png" id="3_jjv1t"]
+
+[node name="Background" type="Node2D"]
+
+[node name="Sprite2D1" type="Sprite2D" parent="."]
+texture = ExtResource("1_rsf5d")
+centered = false
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+texture = ExtResource("2_ewwm8")
+centered = false
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+texture = ExtResource("3_jjv1t")
+centered = false

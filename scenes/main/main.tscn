@@ -1,0 +1,13 @@
+[gd_scene load_steps=4 format=3 uid="uid://rriaq5aixv2x"]
+
+[ext_resource type="PackedScene" uid="uid://chi71odh1ab2b" path="res://scenes/spawner/spawner.tscn" id="1_hyk8p"]
+[ext_resource type="PackedScene" uid="uid://cm8qrujxm1vjj" path="res://scenes/background/background.tscn" id="1_iuonh"]
+[ext_resource type="PackedScene" uid="uid://dlx0xvso2bfra" path="res://scenes/water/water.tscn" id="2_k2fmo"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Background" parent="." instance=ExtResource("1_iuonh")]
+
+[node name="Water" parent="." instance=ExtResource("2_k2fmo")]
+
+[node name="Spawner" parent="." instance=ExtResource("1_hyk8p")]

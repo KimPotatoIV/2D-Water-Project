@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://y24fsdxh2ny4"]
+
+[ext_resource type="Script" uid="uid://b6wj6ljgoaty0" path="res://scenes/raindrop/raindrop.gd" id="1_bxxc8"]
+[ext_resource type="Texture2D" uid="uid://clcs3wnkgx5j7" path="res://scenes/raindrop/raindrop.png" id="2_aq7xh"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_djbv4"]
+radius = 6.0
+height = 16.0
+
+[node name="Raindrop" type="RigidBody2D"]
+script = ExtResource("1_bxxc8")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_aq7xh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_djbv4")

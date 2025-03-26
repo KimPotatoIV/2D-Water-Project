@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://dlx0xvso2bfra"]
+
+[ext_resource type="Script" uid="uid://dicpkpjy21d07" path="res://scenes/water/water.gd" id="1_2dnj0"]
+
+[node name="Water" type="Node2D"]
+script = ExtResource("1_2dnj0")
+
+[node name="Line2D" type="Line2D" parent="."]
+
+[node name="Polygon2D" type="Polygon2D" parent="."]
